@@ -5,18 +5,20 @@ import Image from 'next/image';
 const Appointment: React.FC = () => {
     
   return (
-    <div className={styles.container}>
+      <div className={styles.container}>
       <div className={styles.leftSide}>
         <h1>MAKE AN <span>APPOINTMENT</span></h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodtempor 
+          incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+          exercitation ullamco laboris nisi ut aliquip exea commodo consequat.
         </p>
         <div className={styles.buttonGroup}>
           <button className={styles.button}>LOREM IPSUM</button>
           <button className={styles.button}>SIT DOLOR</button>
         </div>
+        
+        <div className={styles.lefttext}>
         <div className={styles.iconSection}>
         <div className={styles.icon}>
           <Image src="/calendar-icon.svg" alt="calendar" width={60} height={60} />
@@ -36,21 +38,22 @@ const Appointment: React.FC = () => {
         </div>
       </div>
       </div>
+      </div>
 
       <div className={styles.rightSide}>
         <h2>IT’S QUICK & EASY</h2>
         <form className={styles.form}>
           <div className={styles.formGroup}>
-            <input type="text" placeholder="Your Name" />
-            <input type="email" placeholder="Email" />
+            <input className={styles.input} type="text" placeholder="Your Name" />
+            <input className={styles.input} type="email" placeholder="Email" />
           </div>
           <div className={styles.formGroup}>
-            <input type="Number"  maxLength={10} placeholder="Phone"/>
-            <input type="text" placeholder="Address" />
+            <input className={styles.input}  type="Number"  maxLength={10} placeholder="Phone"/>
+            <input className={styles.input}  type="text" placeholder="Address" />
           </div>
           <div className={styles.formGroup}>
-            <input type="Text" placeholder="City"/>
-            <input type="Number" placeholder="Postal Code" />
+            <input className={styles.input} type="Text" placeholder="City"/>
+            <input className={styles.input} type="Number" placeholder="Postal Code" />
           </div>
            {/* <input type="email" className={styles.input} placeholder="Email"/>
            <input type="Number" placeholder="Contact" className={styles.input}/> */}
@@ -61,7 +64,8 @@ const Appointment: React.FC = () => {
           <button className={styles.submitButton}>Submit</button>
         </form>
       </div>
-    </div>
+      </div>
+   
   );
 };
 
